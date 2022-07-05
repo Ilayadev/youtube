@@ -1,0 +1,138 @@
+.header-parent{
+    width: 100%;
+    height: 100%;    
+    background-color: #fff;    
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    height: 100%;
+}
+.guide-img-container{
+    display: flex;    
+    align-items: center;
+    column-gap: 9px;
+}
+.guide-container{
+    width: 40px;
+    height: 40px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.guide{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    background-image: url(menu.svg);
+    background-repeat: no-repeat;
+    background-size: 29px 31px;
+    background-position: -9px -5px
+}
+.img-container{
+    width: 100px;
+    height: 24px;  
+}
+.logo{
+    width: 100%;
+    height: 100%;   
+    background-image: url(YOUTUBE_LOGO.png);
+    background-size: 92px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.search-voice-container{
+    display: grid;
+    grid-template-columns: minmax(auto,640px) 1fr;    
+    align-items: center;
+    column-gap: 5px;
+}
+.search-container{
+    margin-left: 84px;
+    display: flex;    
+    border: 1px solid #ccc;    
+    align-items: center;
+}
+.text-area{      
+    flex-grow: 1;
+    height: 40px;
+    display: flex;
+    align-items: center;  
+    padding: 7px 7px;   
+}
+.icon-area{
+    width: 65px;
+    height: 40px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: #f8f8f8;
+    border-left: 1px solid #ccc;
+}
+.search-icon{
+    width: 24px;
+    height: 24px;   
+    background-image: url("./search.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    font-family: Roboto,Noto,sans-serif;
+    border:none;
+}
+.voice-container{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+.voice-icon{
+    width: 24px;
+    height: 24px;  
+    background-image: url("./voice.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.icons-container{
+    min-width: 260px;
+    display: flex;  
+    column-gap: 2px;
+    justify-content: flex-end;
+    padding-right: 18px;
+}
+.i1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;    
+}
+.icons{
+    width: 25px;
+    height: 25px;    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#video{
+    background-image: url("./video.svg");
+}
+#apps{    
+    background-image: url("./apps.svg");
+}
+#notification{
+    background-image: url("./notification.svg");
+}
+#profile{
+    background-image: url("./person.svg")
+}

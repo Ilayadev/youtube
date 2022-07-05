@@ -1,0 +1,26 @@
+.home-ticket-parent{
+    max-width: 280px;
+    height: max-content;
+    display: grid;
+    grid-template-rows: 4fr 3fr;   
+    border: 1px solid;
+}
+.details-panel{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.title-container,.views-container{
+    padding-left: 6px;
+}
+.channel-container{
+    margin-top: 4px;
+}
+.pro{
+    margin: 3px;    
+}
+#profile-icon{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}

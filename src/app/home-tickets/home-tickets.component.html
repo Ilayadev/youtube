@@ -1,0 +1,27 @@
+<div class="home-ticket-parent">
+    <div class="img-panel">
+        <app-img-tag  [imgurl]='data.imgSrc' ></app-img-tag>
+    </div>
+    <div class="details-panel">
+        <div class="profile-container">
+            <div class="pro">
+                <a>
+                    <div>
+                        <img id="profile-icon" [src]="data.channeldetails.channelProfile" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="details-container">
+            <div class="title-container">
+                <app-title [title]="data.title"></app-title>
+            </div>
+            <div class="views-container">
+                <app-viewstime></app-viewstime>
+            </div>
+            <div class="channel-container">
+                <app-channel-details [channeldetails]="data.channeldetails" [profile]='false'></app-channel-details>                                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+.explore-parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 1px solid; */
+}
+.container{
+    max-width: 1040px;
+    /* border: 1px solid;    */
+    margin: 10px 40px;
+}
+.destinations-buttons-parent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border: 1px solid; */
+    padding: 4px;
+    column-gap: 4px;
+    row-gap: 4px;
+}
+.desti-button{
+    width: 200px;
+    height: 100px;
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.desti-img-parent{
+    /* border: 1px solid ; */
+    display: flex;
+    align-items: center;
+    padding: 2px 2px 2px 15px;
+}
+.desti-img{
+    width: 32px;
+    height: 32px;
+    
+}
+.desti-lable-parent{
+    /* border: 1px solid; */
+    padding: 2px 2px 2px 15px;
+}
+.desti-lable{
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+    display: block;
+    color: #030303;
+}
+.destinations-parent{
+    width: 100%;
+    height:max-content;
+    /* border:1px solid */
+}
+.title-parent{
+    margin-top: 19px;
+}
+.destinations{
+    margin-top: 19px;
+    width: 100%;
+    /* height: 175px; */
+}
+.desti-tags{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid ; */
+}
+.destination-tickets-container{
+    max-width: 825px;
+    height: max-content;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}

@@ -1,0 +1,21 @@
+<div class="home-grid-container">
+    <div class="header-parent">
+        <div class="header">
+            <div class="tags-wrapper">
+                <div class="left arrow"></div>
+                <div class="scroll-container">
+                    <div class="tags-container">
+                        <div class="tags" *appFor="let  item of data.service.tags">{{item}}</div>                        
+                    </div>
+                </div>
+                <div class="right arrow"></div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="content">
+        <div class=video-render-parent>
+            <app-home-tickets *appFor="let item of data.service.data" [data]="item"></app-home-tickets>
+        </div>
+    </div>
+</div>

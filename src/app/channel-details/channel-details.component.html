@@ -1,0 +1,13 @@
+<div class="channel-wrapper">
+    <div class="profile" *ngIf='profile'>
+        <a href="">
+            <div>
+                <img id="profile-img" [src]="channeldetails.channelProfile" alt="">
+            </div>
+        </a>
+    </div>
+    <div class="channel-name"><span class="i1">{{channeldetails.channelName}}</span></div>
+    <div class="verified" *appIf="channeldetails.channelState">
+        <img src="../../assets/checkcircle.svg" alt="">
+    </div>
+</div>

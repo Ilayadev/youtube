@@ -1,0 +1,25 @@
+.parent{
+    width: 100%;
+}
+.title-parent{
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+    display: block;
+    color: #030303;
+    margin-top: 12px;
+}
+.content{
+    margin-top: 18px;
+    display:flex;
+    flex-wrap: wrap;   
+    row-gap: 22px;
+}
+.title{
+    max-width: 680px;
+    white-space: nowrap;
+    padding: 1px 1px 1px 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

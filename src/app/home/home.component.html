@@ -1,0 +1,45 @@
+<div class="home-parent">
+    <div class="home" >
+        <div class="mini-guide">
+            <div class="icon-bar">
+                <div class="i1" >
+                    <a class="anchor-element" routerLink="" >
+                        <div class="icon" id="home"></div>
+                        <span class="tag">Home</span>
+                    </a>
+                </div>
+                <div class="i1">
+                    <a class="anchor-element"  routerLink="explore" >
+                        <div class="icon" id="explore"></div>
+                        <span class="tag">Explore</span>
+                    </a>
+                </div>
+                <div class="i1">
+                    <a class="anchor-element">
+                        <div class="icon" id="shorts"></div>
+                        <span class="tag">Shorts</span>
+                    </a>
+                </div>
+                <div class="i1">
+                    <a class="anchor-element"  routerLink="subscription" >
+                        <div class="icon" id="subscription"></div>
+                        <span class="tag">Subscription</span>
+                    </a>
+                </div>
+                <div class="i1">
+                    <a class="anchor-element">
+                        <div class="icon" id="library"></div>
+                        <span class="tag">Library</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="route-outlet-element">
+            <!-- <app-home-element></app-home-element> -->
+            <!-- <app-explore></app-explore> -->
+            <!-- <app-subscription></app-subscription> -->
+            <!-- <app-result-tickets></app-result-tickets> -->
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
