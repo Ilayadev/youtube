@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExploreComponent } from './explore/explore.component';
 import { HomeElementComponent } from './home-element/home-element.component';
 import { HomeComponent } from './home/home.component';
-import { ResultComponent } from './result/result.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
+import { VideoPlayingComponent } from './video-playing/video-playing.component';
 
 const routes: Routes = [
   {
@@ -20,11 +20,12 @@ const routes: Routes = [
     }]
   },
   {
-    path:"",redirectTo:"result",pathMatch:"full"
+    path:"",redirectTo:"home",pathMatch:"full"
   },
   {
-    path:"result",component:ResultComponent
+    path:"watching/:id",component:VideoPlayingComponent
   }
+  
  
 ];
 

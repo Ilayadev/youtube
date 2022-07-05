@@ -1,19 +1,19 @@
 <div class="tickets-parent">
     <div class="content">
         <div class="img-panel">
-         <app-img-tag></app-img-tag>  
+         <app-img-tag [imgurl]="data.imgSrc"></app-img-tag>  
         </div>
         <div class="details-panel">
             <div class="details">
               <div class="title-meta-wrapper">
-                 <app-title></app-title> 
+                 <app-title [title]="data.title"></app-title> 
                   <app-viewstime></app-viewstime>
               </div>
               <div class="chanel-profile-wrapper">
-                  <app-channel-details [profile]='true'></app-channel-details>
+                  <app-channel-details [channeldetails]="data.channeldetails" [profile]='true'></app-channel-details>
               </div>
               <div class="content-wrapper">
-                  <span class="m1">ror3 rgour3g gg gtigtg gtijhgtgkntk gtkgnttkng thgt</span>
+                  <span class="m1">{{data.description}}</span>
               </div>
             </div>
         </div>

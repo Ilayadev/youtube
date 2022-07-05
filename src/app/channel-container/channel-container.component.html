@@ -1,20 +1,8 @@
 <div class="parent">
     <div class="title-parent">
-        <div class="title"><h3><span>Comdey</span></h3></div>
+        <div class="title"><h3><span>{{tag}}</span></h3></div>
     </div>
     <div class="content">
-        <app-channel></app-channel>
-        <app-channel></app-channel>
-        <app-channel></app-channel>
-        <app-channel></app-channel>
-        <app-channel></app-channel>
-        <app-channel></app-channel>
-        <app-channel></app-channel>
-        <app-channel></app-channel>
-        <app-channel></app-channel>
-        <app-channel></app-channel>
-        <app-channel></app-channel>
-        <app-channel></app-channel>
-        <app-channel></app-channel>
+        <app-channel *appFor="let item of selectedTagArray " [channel]="item"></app-channel>        
     </div>
 </div>

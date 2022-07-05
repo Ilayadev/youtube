@@ -21,8 +21,9 @@ import { StyleDirective } from './style.directive';
 import { ResultTicketsComponent } from './result-tickets/result-tickets.component';
 import { IfDirective } from './if.directive';
 import { ForDirective } from './for.directive';
-import{details} from './interface';
-import { ResultComponent } from './result/result.component'
+import { YouTubePlayerModule } from "@angular/youtube-player";
+import { VideoPlayingComponent } from './video-playing/video-playing.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,10 +45,12 @@ import { ResultComponent } from './result/result.component'
     ResultTicketsComponent,
     IfDirective,
     ForDirective,
-    ResultComponent,    
+    VideoPlayingComponent,   
+    
   ],
   imports: [
     BrowserModule,
+    YouTubePlayerModule,
     AppRoutingModule
   ],
   providers: [],

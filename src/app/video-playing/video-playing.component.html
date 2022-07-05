@@ -1,0 +1,64 @@
+<div class="parent">
+    <div class="content">
+        <div class="primary-container">
+            <div class="primary-content">
+                <div class="video-container">
+                    <youtube-player [videoId]="selectedId" suggestedQuality="highres" [height]="320" [width]="740"
+                        [startSeconds]="4" [endSeconds]="8">
+                    </youtube-player>
+                </div>
+                <div class="video-details">
+                    <div class="title-container">
+                       <div >
+                           <h2 class="title">{{dataobject.title}}  </h2>
+                       </div>
+                    </div>
+                    <div class="views-buttons-container">
+                        <div class="views-container">
+                           <div class="views">{{dataobject.views}}</div>
+                        </div>
+                        <div class="button-container">
+                            <div class="button">
+                                <app-img-tag imgurl="../../assets/thumup.svg"></app-img-tag>
+                                <div class="lable">like</div>
+                            </div>
+                            <div class="button">
+                                <app-img-tag imgurl="../../assets/thumdown.svg"></app-img-tag>
+                                <div class="lable">dislike</div>
+                            </div>
+                            <div class="button">
+                                <app-img-tag imgurl="../../assets/share.svg"></app-img-tag>
+                                <div class="lable">share</div>
+                            </div>
+                            <div class="button">
+                                <app-img-tag imgurl="../../assets/cutter.svg"></app-img-tag>
+                                <div class="lable">cutclip</div>
+                            </div>
+                            <div class="button">
+                                <app-img-tag imgurl="../../assets/addcard.svg"></app-img-tag>
+                                <div class="lable">save</div>
+                            </div>
+                            <div class="button-wrapper">
+                                <div class="dot-con">
+                                    <img src="../../assets/threedot.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="secondary-container">
+            <div class="secondary-content">
+                <div class="tags-container">
+                    <div class="tags-wrapper">
+                        <div class="tags" *appFor="let item of data.service.tags">{{item}}</div>
+                    </div>
+                </div>
+                <div class="tickets-container">
+                   <app-tickets *appFor="let item of data.service.data" [data]="item" [routerLink]="['/watching',item.videoId]"></app-tickets>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

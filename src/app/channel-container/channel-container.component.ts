@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { details } from '../interface';
 
 @Component({
   selector: 'app-channel-container',
@@ -6,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./channel-container.component.css']
 })
 export class ChannelContainerComponent implements OnInit {
-
-  constructor() { }
-
+ selectedTagArray!:details[]
+  constructor(private data:DataService) { }
+  @Input()tag!:string 
   ngOnInit(): void {
+    this.selectedTagArray= this.data.service.data.filter(x=>x.tag===this.tag)    
   }
-
 }
