@@ -3,13 +3,15 @@ import { details } from './interface';
 interface service{
   tags:string[],
   destinationButtons:{url:string,buttonName:string}[]
-  data:details[]
+  data:details[],
+  searched:string
 }
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
   service:service = {
+    searched:"",
     destinationButtons:[{
       url:"https://youtube.com/img/explore/destinations/icons/trending_color_32.png",
       buttonName:"Trending"
@@ -47,7 +49,7 @@ export class DataService {
       buttonName:"Learning"
     }
   ],
-    tags: ["music", "sports", "angular", "cooking", "dance", "cars", "bikes", "animals","cooking","courtralam"],
+    tags: ["All","music", "sports", "angular", "dance", "cars", "bikes", "animals","cooking","courtralam"],
     data: [{
       title: "Beautiful Relaxing Music • Peaceful Piano Music & Guitar Music ",
       views: 64915819,

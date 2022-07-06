@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-result-tickets',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./result-tickets.component.css']
 })
 export class ResultTicketsComponent implements OnInit { 
-  constructor() { }
-
+  
+  constructor(public data:DataService,private activeroute:ActivatedRoute) {
+     activeroute.queryParamMap.subscribe((param)=>{
+       data.service.searched=param.get('search') as string       
+     })
+   }
   ngOnInit(): void {
   }
 

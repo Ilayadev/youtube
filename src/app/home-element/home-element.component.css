@@ -35,12 +35,16 @@
 }
 .tags{
     margin: 6px;
-    padding: 9px 21px;   
+    padding: 4px 12px;   
     background-color: rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: #030303;
     border-radius: 18px;
     font-size: 14px;
+}
+.tags-highlighted{
+    background-color: #030303;
+    color: #fff;
 }
 .content{
     display: flex;

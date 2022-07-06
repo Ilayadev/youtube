@@ -4,13 +4,13 @@
        <div class="header">
            <div class="title-container">
                <div class="icon">
-                   <app-img-tag></app-img-tag>
+                   <app-img-tag imgurl="assets/filter.svg"></app-img-tag>
                </div>
                <div class="title">FILTERS</div>
            </div>
        </div>
        <div class="tickets-container">
-        <app-tickets *appFor="let item of [1,2,3,4,5,6,7,8,9]"></app-tickets>      
+        <app-tickets *appFor="let item of data.service.data|filter:data.service.searched:'searched'" [data]="item"></app-tickets>      
        </div>
     </div>
 </div>

@@ -2,7 +2,7 @@
     <div class="header">
         <div class="guide-img-container">
             <div class="guide-container">
-               <button class="guide"></button>
+                <button class="guide"></button>
             </div>
             <div class="img-container">
                 <a href="">
@@ -12,8 +12,27 @@
         </div>
         <div class="search-voice-container">
             <div class="search-container">
-                <div class="text-area">
-                    <input type="text" placeholder="Search">
+                <div class="text-area" #searchbar>
+                    <div>
+                        <button *appIf="hasfocus" class="hide-search-button">
+                            <span class="search-icon"></span>
+                        </button>
+                    </div>
+                    <input type="text" placeholder="Search" (focus)="focusing()" (blur)="bluring()" (keydown)="searching($event)" [(ngModel)]="searched">
+                    <div class="suggestion-container" *appIf="show">
+                        <div class="suggestion-wrapper">                            
+                            <ul>
+                                <li *appFor="let item of data.service.data|filter:searched:'filter'">
+                                    <div class="suggestion-list-container">
+                                        <div class="history-icon">                                         
+                                        </div>
+                                        <div class="suggestion"><span>{{item}}</span></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <button class="icon-area">
@@ -29,24 +48,24 @@
         </div>
         <div class="icons-container">
             <div class="i1">
-               <a href="">
-                   <div id="video" class="icons"></div>
-               </a>
+                <a href="">
+                    <div id="video" class="icons"></div>
+                </a>
             </div>
             <div class="i1">
-               <a href="">
-                   <div id="apps" class="icons"></div>
-               </a>
+                <a href="">
+                    <div id="apps" class="icons"></div>
+                </a>
             </div>
             <div class="i1">
-               <a href="">
-                   <div id="notification" class="icons"></div>
-               </a>
+                <a href="">
+                    <div id="notification" class="icons"></div>
+                </a>
             </div>
             <div class="i1">
-               <a href="">
-                   <div id="profile" class="icons"></div>
-               </a>
+                <a href="">
+                    <div id="profile" class="icons"></div>
+                </a>
             </div>
         </div>
     </div>

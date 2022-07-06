@@ -23,6 +23,8 @@ import { IfDirective } from './if.directive';
 import { ForDirective } from './for.directive';
 import { YouTubePlayerModule } from "@angular/youtube-player";
 import { VideoPlayingComponent } from './video-playing/video-playing.component';
+import { FilterPipe } from './pipe/filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,10 +47,12 @@ import { VideoPlayingComponent } from './video-playing/video-playing.component';
     ResultTicketsComponent,
     IfDirective,
     ForDirective,
-    VideoPlayingComponent,   
+    VideoPlayingComponent,
+    FilterPipe,   
     
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     YouTubePlayerModule,
     AppRoutingModule

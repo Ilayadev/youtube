@@ -24,12 +24,13 @@
 .title{
     font-family: "Roboto","Arial",sans-serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 21px;
     color: #030b1a;
 }
 .views-buttons-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .button-container{
     margin-top: 12px;

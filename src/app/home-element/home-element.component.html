@@ -5,7 +5,7 @@
                 <div class="left arrow"></div>
                 <div class="scroll-container">
                     <div class="tags-container">
-                        <div class="tags" *appFor="let  item of data.service.tags">{{item}}</div>                        
+                        <div class="tags" [appClass]="{'tags-highlighted':item==selectedTag}"  *appFor="let  item of data.service.tags" (click)="changingtags(item)">{{item}}</div>                        
                     </div>
                 </div>
                 <div class="right arrow"></div>
@@ -15,7 +15,7 @@
     </div>
     <div class="content">
         <div class=video-render-parent>
-            <app-home-tickets *appFor="let item of data.service.data" [data]="item" [routerLink]="['/watching',item.videoId]"></app-home-tickets>
+            <app-home-tickets *appFor="let item of selectedData" [data]="item" [routerLink]="['/watching',item.videoId]"></app-home-tickets>
         </div>
     </div>
 </div>
